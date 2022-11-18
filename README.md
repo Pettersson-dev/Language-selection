@@ -86,14 +86,14 @@ List of considered/evaluated languages
 
 ### C# (.net core)
 
- Good fit
-   - When there is a fit in echosystem (like Service fabric etc.)
-   - Small to large implementations
-   - Want to use MVC for frontend.
+Good fit
+- When there is a fit in echosystem (like Service fabric etc.)
+- Small to large implementations
+- Want to use MVC for frontend.
   
-  Bad fit
-    - Ecosystem and libraries (getting better).
-    - Small sytem and want to avoid boilerplate
+Bad fit
+ - Ecosystem and libraries (getting better).
+ - Small sytem and want to avoid boilerplate
 
  ### Python
  
