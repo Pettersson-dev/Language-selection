@@ -92,7 +92,7 @@ List of considered/evaluated languages
    - Want to use MVC for frontend.
   
   Bad fit
-    - Echosystem and libraries (getting better).
+    - Ecosystem and libraries (getting better).
     - Small sytem and want to avoid boilerplate
 
  ### Python
