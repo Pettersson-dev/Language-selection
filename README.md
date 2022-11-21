@@ -7,7 +7,7 @@ Opinionated Programming Language Decision Tree.
 Microservice architecture (service mesh) that allows polyglot languages. PWA or SPA and backend for front-end.
 
 - [Security architecture](https://github.com/pettersson-dev/security-architecture)
-- [API Integration architecture]()
+- [API Integration architecture](https://github.com/Pettersson-dev/Integration-architecture/blob/main/api-integration.md)
 - [Application architecture]()
 
 ## Shortlist
