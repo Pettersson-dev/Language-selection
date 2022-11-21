@@ -6,7 +6,7 @@ Opinionated Programming Language Decision Tree.
 # Prerequisites
 Microservice architecture (service mesh) that allows polyglot languages. PWA or SPA and backend for front-end.
 
-- [Security architecture](https://github.com/davidpetter/security-architecture)
+- [Security architecture](https://github.com/pettersson-dev/security-architecture)
 - [API Integration architecture]()
 - [Application architecture]()
 
