@@ -103,7 +103,9 @@ Bad fit
    - Prototyping
    - For the purpose of libraries and ecosystem
  Bad fit
-   -
+   - Applications with high security requiirements
+   - Mobile and game implementations
+   - Large monolitic applications
     
 ## Frontend/client
  - Browser
