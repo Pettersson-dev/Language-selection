@@ -8,7 +8,7 @@ Microservice architecture (service mesh) that allows polyglot languages. PWA or 
 
 - [Security architecture](https://github.com/pettersson-dev/security-architecture)
 - [API Integration architecture](https://github.com/Pettersson-dev/Integration-architecture/blob/main/api-integration.md)
-- [Application architecture]()
+- [Application architecture](https://github.com/Pettersson-dev/application-architecture)
 
 ## Shortlist
 List of considered/evaluated languages
