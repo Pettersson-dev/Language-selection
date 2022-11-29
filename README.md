@@ -1,6 +1,6 @@
 # Work in progress!
 
-# Deciding on a fit for purpose a programming language
+# Deciding on a fit for purpose programming language
 Opinionated Programming Language Decision Tree.
 
 # Prerequisites
