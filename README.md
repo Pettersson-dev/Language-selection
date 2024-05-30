@@ -104,7 +104,7 @@ Bad fit
    - For the purpose of libraries and ecosystem
  
 Bad fit
-   - Applications with high security requiirements
+   - Applications with high security requirements
    - Mobile and game implementations
    - Large monolitic applications
     
