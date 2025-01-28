@@ -1,118 +1,115 @@
-# Work in progress!
+# Work in Progress  
 
-# Deciding on a fit for purpose programming language
-Opinionated Programming Language Decision Tree.
+# Deciding on a Fit-for-Purpose Programming Language  
+**Opinionated Programming Language Decision Tree**  
 
-# Prerequisites
-Microservice architecture (service mesh) that allows polyglot languages. PWA or SPA and backend for front-end.
+---
 
-- [Security architecture](https://github.com/pettersson-dev/security-architecture)
-- [API Integration architecture](https://github.com/Pettersson-dev/Integration-architecture/blob/main/api-integration.md)
-- [Application architecture](https://github.com/Pettersson-dev/application-architecture)
+## **Prerequisites**  
+- **Architecture**: Microservice architecture (service mesh) supporting polyglot languages.  
+- **Application Type**: Progressive Web Applications (PWA), Single Page Applications (SPA), and backend-for-frontend (BFF).  
+- **Related Resources**:  
+   - [Security Architecture](https://github.com/pettersson-dev/security-architecture)  
+   - [API Integration Architecture](https://github.com/Pettersson-dev/Integration-architecture/blob/main/api-integration.md)  
+   - [Application Architecture](https://github.com/Pettersson-dev/application-architecture)  
 
-## Shortlist
-List of considered/evaluated languages
-- C# / .NET (Core)
-- Clojure
-- Elixir
-- Erlang
-- Go
-- Groovy
-- JavaScript
-- Kotlin
-- C++
-- Dart
-- Java
-- Node.js
-- Objective-C
-- PHP
-- Python
-- Ruby
-- Rust
-- Scala
-- Swift
-- TypeScript
+---
 
-# Decision tree
-## Backend
- ### Go
- Default choice for a general purpose solution that is self written (no framework etc). 
- Write stable and efficient code that performs a limited task.
- 
- Good fit
- - Strict harware requirements
- - High security requirements
- - Small
- 
- Bad fit
- - Large implementations (monolithical)
- - Dependency mmanagement and libraries
- 
- ### Java/Kotlin/Scala
- General purpose solution that often related to integration or security. 
- 
- Usage:
- Messaging, web application, highly concurrent application
- 
- 
- Good fit:
- - For the purpose of libraries and ecosystem.
- - A good fit for medium to large size implementations that doesn't have strict resource constraints.
- - Security, Maths, BI
- 
- Bad fit:
- - Strict hardware requirements
- - IO operations
- - Memory requirements (Managing images etc)
- - Small sytem and want to avoid boilerplate
+## **Shortlist of Programming Languages**  
+The following languages have been shortlisted for evaluation based on specific use cases:  
 
+- **General Purpose**: C#, C++, Go, Java, Kotlin, Python, Rust, Scala  
+- **Functional**: Clojure, Elixir, Erlang  
+- **Scripting and Prototyping**: JavaScript, Node.js, Groovy, PHP, Ruby  
+- **Frontend**: TypeScript, Dart, Swift, Objective-C  
+- **Specialized**: Rust, Scala (for highly concurrent or secure systems)  
 
- ### Javascript/Node.js
- 
- Highly useful when scalable and faster application is required. More suited for an application like real-time collaborative.
- 
- Good fit
- - Prototyping
- - For the purpose of libraries and ecosystem
- - A good fit for small single threaded tasks
- - Transformation support
- - Want to have same language for backend and frontend 
- - Want to optimize for IO
- 
- Bad fit
- - Concurrency and multi threading
- - Large implementations (monolithical)
- - Want to optimize for CPU
+---
 
-### C# (.net core)
+## **Decision Tree**  
 
-Good fit
-- When there is a fit in echosystem (like Service fabric etc.)
-- Small to large implementations
-- Want to use MVC for frontend.
-  
-Bad fit
- - Ecosystem and libraries (getting better).
- - Small sytem and want to avoid boilerplate
+### **Backend**  
 
- ### Python
- 
- Good fit
-   - Maths, BI and AI. Optimise for IO
-   - Scripting
-   - Prototyping
-   - For the purpose of libraries and ecosystem
- 
-Bad fit
-   - Applications with high security requirements
-   - Mobile and game implementations
-   - Large monolitic applications
-    
-## Frontend/client
- - Browser
-   - Javascript
-   - TypeScript
- - Mobile (when native is needed)
-   Native is good when you want to differentiate and want to have the latest that the plattform can )
-   - Swift
-   - Kotlin
+#### **Go**  
+- **Default choice** for simple, efficient, and stable services with minimal dependencies.  
+- **Good Fit**:  
+  - Strict hardware requirements (e.g., IoT).  
+  - High security requirements.  
+  - Small, standalone services.  
+- **Bad Fit**:  
+  - Large, complex implementations.  
+  - Dependency management and extensive library requirements.  
+
+---
+
+#### **Java/Kotlin/Scala**  
+- **General purpose** solutions, particularly suited for integrations, messaging, and highly concurrent systems.  
+- **Good Fit**:  
+  - Extensive libraries and mature ecosystems.  
+  - Medium to large-scale implementations.  
+  - Use cases in security, mathematics, or business intelligence (BI).  
+- **Bad Fit**:  
+  - Strict hardware constraints.  
+  - Heavy IO operations.  
+  - Resource-heavy applications (e.g., image processing).  
+
+---
+
+#### **JavaScript/Node.js**  
+- Ideal for **real-time applications** and systems requiring seamless integration between frontend and backend.  
+- **Good Fit**:  
+  - Prototyping.  
+  - Single-threaded tasks.  
+  - Optimized for IO and transformation support.  
+  - Unified language across the stack.  
+- **Bad Fit**:  
+  - CPU-intensive or multi-threaded applications.  
+  - Large, monolithic systems.  
+
+---
+
+#### **C# (.NET Core)**  
+- A powerful choice for organizations already invested in Microsoft’s ecosystem.  
+- **Good Fit**:  
+  - Small to large-scale implementations.  
+  - MVC architecture for frontend.  
+  - Integration with Microsoft-based tools (e.g., Azure, Service Fabric).  
+- **Bad Fit**:  
+  - Limited libraries (though improving).  
+  - Small systems needing minimal boilerplate.  
+
+---
+
+#### **Python**  
+- **Versatile language** best suited for scripting, data analysis, and prototyping.  
+- **Good Fit**:  
+  - Data-heavy applications (Math, BI, AI).  
+  - Scripting and prototyping.  
+  - Applications optimized for IO.  
+- **Bad Fit**:  
+  - High-security applications.  
+  - Mobile or game development.  
+  - Large, monolithic applications.  
+
+---
+
+### **Frontend/Client**  
+
+#### **Browser-Based Applications**  
+- **JavaScript**: The default language for client-side applications.  
+- **TypeScript**: A superset of JavaScript offering better type safety and tooling.  
+
+#### **Mobile Applications**  
+- **Native Development**:  
+  - **Swift**: Best suited for iOS development.  
+  - **Kotlin**: Ideal for Android development.  
+- **When to Choose Native**:  
+  - To differentiate through platform-specific features.  
+  - To leverage the latest advancements offered by the platform.  
+
+---
+
+## **Additional Notes**  
+- **Polyglot Considerations**: Ensure the service mesh supports interoperability and integration between chosen languages.  
+- **Ecosystem Alignment**: Opt for languages that align with organizational expertise and existing tools.  
+- **Future-proofing**: Evaluate community support and updates for long-term sustainability 
