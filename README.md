@@ -151,3 +151,31 @@
 - **Elixir/Erlang** → Highly concurrent distributed systems.  
 - **TypeScript** → Best frontend and long-term maintainability.  
 - **Swift/Kotlin** → Native mobile excellence.  
+
+# Programming Language Decision Tree
+
+Start  
+│  
+├── Is it **Frontend/Client**?  
+│   │  
+│   ├── Browser-based → **TypeScript** (preferred) / JavaScript  
+│   └── Mobile  
+│        ├── iOS → **Swift**  
+│        └── Android → **Kotlin**  
+│  
+└── Is it **Backend/Service**?  
+    │  
+    ├── Small, efficient, secure microservice? → **Go**  
+    │  
+    ├── High performance & memory safety critical? → **Rust**  
+    │  
+    ├── Enterprise integration, messaging, concurrency? → **Java / Kotlin / Scala**  
+    │  
+    ├── Data science, AI/ML, scripting, prototyping? → **Python**  
+    │  
+    ├── Real-time, event-driven, unified frontend-backend stack? → **Node.js**  
+    │  
+    ├── Microsoft ecosystem / Azure heavy? → **C# (.NET Core)**  
+    │  
+    └── Highly concurrent, distributed (telecom/chat/streaming)? → **Elixir / Erlang**  
+
